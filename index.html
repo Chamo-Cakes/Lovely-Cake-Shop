@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#f2f2f2;
+}
+
+/* Header eka flexbox ekak kala */
+header {
+    background:#0d6efd;
+    color:white;
+    padding:15px 25px;
+    display: flex;
+    justify-content: space-between; /* Text saha Image athara ida thiyanna */
+    align-items: center; /* Vertical alignment eka center karanna */
+}
+
+.header-text {
+    text-align: left; /* Text tika wam paththata */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+/* Photo eke size eka palanaya karanna */
+.header-img {
+    width: 100px;  /* Oyata awashya widiyata size eka wenas karanna */
+    height: 100px;
+    border-radius: 50%; /* Rawum wenna oni nam meka thiyanna */
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.section{
+    background:white;
+    margin:10px;
+    padding:15px;
+    border-radius:8px;
+}
+button{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    font-size:16px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+}
+.call{background:green;color:white;}
+.whatsapp{background:#25D366;color:white;}
+.map{background:#ff9800;color:white;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-text">
+        <h1><u>Lovely Cake Shop</u></h1>
+        <p>Custom Cakes for Every Special Moment.</p>
+    </div>
+    
+    <img src="chamo.jpg" alt="Shop Logo" class="header-img">
+</header>
+
+<div class="section">
+    <h3>📍 Address: Hemmathagama, Mawanella</h3>
+    <p>⏰ Open:  8.00 AM - 6.00 PM </p>
+    <p>📞 Phone: 0764180317</p>
+</div>
+
+<div class="section">
+    <h3>📞 Contact Us </h3>
+    <a href="tel:0764180317">
+        <button class="call">Call Now</button>
+    </a>
+    <a href="https://wa.me/94764180317">
+        <button class="whatsapp">WhatsApp</button>
+    </a>
+</div>
+
+<div class="section">
+    <h3><u>🛒Items</u></h3>
+    <p>Starting from 500g</p></p>
+    <p>✔ Butter Cake</p>
+    <p>✔ Chocolate Cake</p>
+    <p>✔ Vanilla Cake</p>
+    <p>✔ Red velvet Cake</p>
+    <p>✔ Coffee Cake</p>
+    <p>✔ Birthday Cake</p>
+    <p>✔ Engagement Cake</p>
+    <p>✔ Bento Cake</p>
+    <p>✔ Cup Cake</p>
+    <p>✔ Cookies</p>
+</div>
+
+</body>
+</html>
