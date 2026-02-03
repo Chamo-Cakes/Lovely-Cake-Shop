@@ -2,27 +2,26 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Shop</title>
+<title>Lovely Cake Shop</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background:#f2f2f2;
 }
 
-/* Header eka flexbox ekak kala */
 header {
     background:#0d6efd;
     color:white;
     padding:15px 25px;
     display: flex;
-    justify-content: space-between; /* Text saha Image athara ida thiyanna */
-    align-items: center; /* Vertical alignment eka center karanna */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-text {
-    text-align: left; /* Text tika wam paththata */
+    text-align: left;
 }
 
 header h1 {
@@ -34,11 +33,10 @@ header p {
     margin: 5px 0 0 0;
 }
 
-/* Photo eke size eka palanaya karanna */
 .header-img {
-    width: 100px;  /* Oyata awashya widiyata size eka wenas karanna */
+    width: 100px;
     height: 100px;
-    border-radius: 50%; /* Rawum wenna oni nam meka thiyanna */
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid white;
 }
@@ -48,7 +46,32 @@ header p {
     margin:10px;
     padding:15px;
     border-radius:8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+/* Item styling */
+details {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+summary {
+    font-weight: bold;
+    outline: none;
+}
+
+.item-img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto 5px auto;
+    border-radius: 8px;
+}
+
 button{
     width:100%;
     padding:12px;
@@ -57,10 +80,10 @@ button{
     border:none;
     border-radius:5px;
     cursor: pointer;
+    font-weight: bold;
 }
 .call{background:green;color:white;}
 .whatsapp{background:#25D366;color:white;}
-.map{background:#ff9800;color:white;}
 </style>
 </head>
 
@@ -71,13 +94,17 @@ button{
         <h1><u>Lovely Cake Shop</u></h1>
         <p>Custom Cakes for Every Special Moment.</p>
     </div>
-    
     <img src="chamo.jpg" alt="Shop Logo" class="header-img">
 </header>
 
+<div class="section" style="text-align: center;">
+    <h2 style="color: #d63384;">🔥 Special Offer! 🔥</h2>
+    <img src="Valentine's Special.jpg" alt="Special Offer" style="width: 100%; max-width: 600px; border-radius: 8px;">
+</div>
+
 <div class="section">
     <h3>📍 Address: Hemmathagama, Mawanella</h3>
-    <p>⏰ Open:  8.00 AM - 6.00 PM </p>
+    <p>⏰ Open: 8.00 AM - 6.00 PM </p>
     <p>📞 Phone: 0764180317</p>
 </div>
 
@@ -92,18 +119,45 @@ button{
 </div>
 
 <div class="section">
-    <h3><u>🛒Items</u></h3>
-    <p>Starting from 500g</p></p>
-    <p>✔ Butter Cake</p>
-    <p>✔ Chocolate Cake</p>
-    <p>✔ Vanilla Cake</p>
-    <p>✔ Red velvet Cake</p>
-    <p>✔ Coffee Cake</p>
-    <p>✔ Birthday Cake</p>
-    <p>✔ Engagement Cake</p>
-    <p>✔ Bento Cake</p>
-    <p>✔ Cup Cake</p>
-    <p>✔ Cookies</p>
+    <h3><u>🛒 Items (Click to see photos)</u></h3>
+    <p>Starting from 500g</p>
+
+    <details>
+        <summary>✔ Butter Cake</summary>
+        <img src="butter_cake.jpg" alt="Butter Cake" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Chocolate Cake</summary>
+        <img src="chocolate_cake.jpg" alt="Chocolate Cake" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Vanilla Cake</summary>
+        <img src="vanilla_cake.jpg" alt="Vanilla Cake" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Red Velvet Cake</summary>
+        <img src="red_velvet.jpg" alt="Red Velvet" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Birthday Cake</summary>
+        <img src="0001.png" alt="Birthday Cake" class="item-img">
+        <img src="0002.png" alt="Birthday Cake" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Bento Cake</summary>
+        <img src="bento_cake.jpg" alt="Bento Cake" class="item-img">
+    </details>
+
+    <details>
+        <summary>✔ Cup Cake</summary>
+        <img src="cup_cake.jpg" alt="Cup Cake" class="item-img">
+    </details>
+    
 </div>
 
 </body>
